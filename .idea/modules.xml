@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Att/Att.iml" filepath="$PROJECT_DIR$/Att/Att.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atividadePOO.iml" filepath="$PROJECT_DIR$/atividadePOO.iml" />
+    </modules>
+  </component>
+</project>
