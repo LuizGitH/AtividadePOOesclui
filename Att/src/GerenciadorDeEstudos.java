@@ -171,10 +171,10 @@ public class GerenciadorDeEstudos {
         }
 
         System.out.println("Atividades disponíveis para agendamento (Tarefas e Revisões):");
-        List<Agendavel> agendaveis = new ArrayList<>();
+        List<Interface> agendaveis = new ArrayList<>();
         for (Atividade atividade : atividades) {
-            if (atividade instanceof Agendavel) {
-                agendaveis.add((Agendavel) atividade);
+            if (atividade instanceof Interface) {
+                agendaveis.add((Interface) atividade);
             }
         }
 
@@ -194,7 +194,7 @@ public class GerenciadorDeEstudos {
             scanner.nextLine(); // Consumir a quebra de linha
 
             if (escolha > 0 && escolha <= agendaveis.size()) {
-                Agendavel atividadeSelecionada = agendaveis.get(escolha - 1);
+                Interface atividadeSelecionada = agendaveis.get(escolha - 1);
                 atividadeSelecionada.agendar();
             } else {
                 System.out.println("Número de atividade inválido.");
@@ -213,10 +213,10 @@ public class GerenciadorDeEstudos {
         }
 
         System.out.println("Atividades agendadas (Tarefas e Revisões):");
-        List<Agendavel> agendadas = new ArrayList<>();
+        List<Interface> agendadas = new ArrayList<>();
         for (Atividade atividade : atividades) {
-            if (atividade instanceof Agendavel && ((Agendavel) atividade).isAgendada()) {
-                agendadas.add((Agendavel) atividade);
+            if (atividade instanceof Interface && ((Interface) atividade).isAgendada()) {
+                agendadas.add((Interface) atividade);
             }
         }
 
@@ -236,7 +236,7 @@ public class GerenciadorDeEstudos {
             scanner.nextLine(); // Consumir a quebra de linha
 
             if (escolha > 0 && escolha <= agendadas.size()) {
-                Agendavel atividadeSelecionada = agendadas.get(escolha - 1);
+                Interface atividadeSelecionada = agendadas.get(escolha - 1);
                 atividadeSelecionada.cancelarAgendamento();
             } else {
                 System.out.println("Número de atividade inválido.");

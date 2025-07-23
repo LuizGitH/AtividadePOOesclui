@@ -4,7 +4,7 @@ import java.time.LocalDate;
 /**
  * Classe concreta que representa uma tarefa, estendendo Atividade e implementando Agendavel.
  */
-public class Tarefa extends Atividade implements Agendavel {
+public class Tarefa extends Atividade implements Interface {
     private boolean concluida;
     private boolean agendada;
 

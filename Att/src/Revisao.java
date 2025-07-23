@@ -4,7 +4,7 @@ import java.time.LocalDate;
 /**
  * Classe concreta que representa uma revisão, estendendo Atividade e implementando Agendavel.
  */
-public class Revisao extends Atividade implements Agendavel {
+public class Revisao extends Atividade implements Interface {
     private String disciplina;
     private boolean agendada;
 
