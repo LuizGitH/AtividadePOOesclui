@@ -3,5 +3,3 @@ public class TratamentoData extends Exception {
         super(message);
     }
 }
-
-/*Pronto*/
