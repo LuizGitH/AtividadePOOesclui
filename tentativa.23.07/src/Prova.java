@@ -50,4 +50,3 @@ public class Prova extends Atividade implements Interface {
         return agendada;
     }
 }
-/*Pronto*/
