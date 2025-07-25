@@ -1,4 +1,3 @@
-// Prova.java (Classe Concreta)
 import java.time.LocalDate;
 
 public class Prova extends Atividade implements Interface {
