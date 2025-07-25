@@ -3,6 +3,3 @@ public class TratamentoPrioridade extends Exception {
         super(message);
     }
 }
-
-
-/*Pronto*/
