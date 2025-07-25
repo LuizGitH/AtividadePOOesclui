@@ -1,14 +1,11 @@
 import java.time.LocalDate;
 
-/**
- * Classe abstrata que representa uma atividade acadêmica genérica.
- * Contém atributos e métodos comuns a todas as atividades.
- */
+
 public abstract class Atividade {
     private String titulo;
     private String descricao;
     private LocalDate data;
-    private int prioridade; // 1-5, onde 1 é a mais alta
+    private int prioridade; 
 
     public Atividade(String titulo, String descricao, LocalDate data, int prioridade) throws TratamentoData, TratamentoPrioridade {
         if (data == null || data.isBefore(LocalDate.now())) {
@@ -40,7 +37,6 @@ public abstract class Atividade {
         return prioridade;
     }
 
-    // Setters (com validação se necessário)
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
