@@ -35,7 +35,7 @@ public class GerenciadorDeEstudos {
 
             try {
                 opcao = scanner.nextInt();
-                scanner.nextLine(); // Consumir a quebra de linha
+                scanner.nextLine();
 
                 switch (opcao) {
                     case 1:
@@ -70,8 +70,8 @@ public class GerenciadorDeEstudos {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Entrada inválida. Por favor, digite um número.");
-                scanner.nextLine(); // Limpar o buffer do scanner
-                opcao = -1; // Para continuar no loop
+                scanner.nextLine();
+                opcao = -1; 
             }
         } while (opcao != 0);
     }
@@ -86,7 +86,7 @@ public class GerenciadorDeEstudos {
         String dataStr = scanner.nextLine();
         System.out.print("Prioridade (1-5): ");
         int prioridade = scanner.nextInt();
-        scanner.nextLine(); // Consumir a quebra de linha
+        scanner.nextLine(); 
 
         try {
             LocalDate data = LocalDate.parse(dataStr);
@@ -110,7 +110,7 @@ public class GerenciadorDeEstudos {
         String dataStr = scanner.nextLine();
         System.out.print("Prioridade (1-5): ");
         int prioridade = scanner.nextInt();
-        scanner.nextLine(); // Consumir a quebra de linha
+        scanner.nextLine();
         System.out.print("Disciplina: ");
         String disciplina = scanner.nextLine();
 
@@ -162,7 +162,7 @@ public class GerenciadorDeEstudos {
         System.out.println("\n--- Lista de Atividades ---");
         for (int i = 0; i < atividades.size(); i++) {
             System.out.println((i + 1) + ". " + atividades.get(i).getTitulo() + " (Tipo: " + atividades.get(i).getClass().getSimpleName() + ")");
-            atividades.get(i).exibirDetalhes(); // Polimorfismo em ação
+            atividades.get(i).exibirDetalhes(); 
         }
     }
 
@@ -205,7 +205,7 @@ public class GerenciadorDeEstudos {
             }
         } catch (InputMismatchException e) {
             System.out.println("Entrada inválida. Por favor, digite um número.");
-            scanner.nextLine(); // Limpar o buffer do scanner
+            scanner.nextLine(); 
         }
     }
 
@@ -247,7 +247,7 @@ public class GerenciadorDeEstudos {
             }
         } catch (InputMismatchException e) {
             System.out.println("Entrada inválida. Por favor, digite um número.");
-            scanner.nextLine(); // Limpar o buffer do scanner
+            scanner.nextLine(); 
         }
     }
     private void editarAtividade() {
